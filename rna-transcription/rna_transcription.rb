@@ -3,14 +3,11 @@ module BookKeeping
 end
 
 class Complement
+  DNA = "GCTA"
+  RNA = "CGAU"
+  
   def self.of_dna(dna)
-    valid_hash = {C:"G", G:"C", T:"A", A:"U"}
-    result = ''
-    dna.length.times do |index|
-      char = dna[index]
-      return '' if valid_hash[char.to_sym].nil?
-      result += valid_hash[char.to_sym]
-    end
-    result
+    return '' unless dna =~ /^[#{DNA}]+$/
+    dna.tr(DNA, RNA)
   end
 end

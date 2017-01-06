@@ -14,4 +14,11 @@ class Pangram
     end
     return alphabet.count == 0
   end
+
+    def self.pangram_another?(phrase)
+    unused_letters = ('a'..'z').to_a - phrase.downcase.chars.to_a
+    return true if unused_letters.empty?
+    return false
+  end
+
 end

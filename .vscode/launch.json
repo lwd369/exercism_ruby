@@ -6,7 +6,7 @@
       "type": "Ruby",
       "request": "launch",
       "cwd": "${workspaceRoot}",
-      "program": "${workspaceRoot}/rna-transcription/rna_transcription.rb"
+      "program": "${workspaceRoot}/sieve/sieve.rb"
     },
     {
       "name": "Listen for rdebug-ide",

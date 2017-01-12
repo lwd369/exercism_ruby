@@ -5,7 +5,7 @@ end
 
 class Sieve
   attr_accessor :range
-
+  
   def initialize(range)
     @range = range
   end
